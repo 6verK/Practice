@@ -1,0 +1,74 @@
+package yaaseenkhan_COMP228Sec006;
+
+public class Singer {
+
+	//SINGER
+	private int singerId;
+	private String name;
+	private String address;
+	private Date date = new Date();
+	private int numberOfAlbums;
+		
+	public Singer() {
+		
+	}
+	
+	public int getSingerId() {
+		return singerId;
+	}
+	
+	public String getName() {		
+		return name;
+	}	
+	
+	public String getAddress() {		
+		return address;
+	}	
+	public Date getDate() {
+		return date;
+	}	
+	
+	public int getNumberOfAlbums() {
+		return numberOfAlbums;
+	}	
+	
+	public void setSingerId(int singerId) {
+		this.singerId = singerId;
+	}
+	
+	public void setName(String name) {			
+		this.name = name;							
+	}	
+	
+	public void setAddress(String address) {		
+		this.address = address;								
+	}	
+	
+	public void setDate(int d, int m, int y) {		
+		this.date = date;								
+	}	
+	
+
+	public void setNumberOfAlbums(int numberOfAlbums) {		
+		this.numberOfAlbums = numberOfAlbums;								
+	}	
+	
+	public void setSinger(int singerId, String name, String address, Date date , int numberOfAlbums) {
+		
+		this.singerId = singerId;
+		this.name = name;
+		this.address = address;	
+		this.date = date;		
+		this.numberOfAlbums = numberOfAlbums;
+	}
+		
+	@Override
+	public String toString() {
+		return String.format("\nSinger ID: %d\nName: %s\nAddress: %s\nDate Of Birth: %f\nNumber Of Albums: ",
+				singerId, name, address, name, date, numberOfAlbums);
+	}
+
+
+	
+
+}// end of class

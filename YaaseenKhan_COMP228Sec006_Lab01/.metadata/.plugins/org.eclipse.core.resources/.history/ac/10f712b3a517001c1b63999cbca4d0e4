@@ -1,0 +1,18 @@
+package yaaseenkhan_COMP228Sec006;
+import java.sql.Date;
+
+public class SingerTest {
+
+	public static void main(String[] args) {
+		Singer singer01 = new Singer();
+		singer01.setSingerId(301164475);
+		singer01.setName("Yaaseen_Khan");
+		singer01.setDob(02, 18, 1998);
+		singer01.setNumberOfAlbums(12);
+		
+		System.out.println("employee data: " + singer01.toString());
+		singer01.setSinger(0, null, null, null, 0);
+
+	}
+
+}

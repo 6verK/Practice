@@ -1,0 +1,126 @@
+package yaaseenkhan_COMP228Sec006;
+
+import java.sql.Date;
+
+public class Singer {
+	private int month;
+	private int day;
+	private int year;
+
+	public void Date(int month, int day, int year) {
+		
+	if (day>0 && day<=31 && month>0 && month<13 && year>1900 && year<=2021)
+		{
+			this.day = day;
+			this.month = month;
+			this.year = year;
+		}
+		
+	}
+	public int getMonth(){
+		return month;
+	}
+	
+	public int getDay() {
+		return day;
+	}
+		
+	public int getYear() {
+		return year;
+	}
+	
+	//setting date
+	public void setMonth(int month)	
+		{
+			this.month = month;
+		}
+	
+	
+	
+	public void setDay(int day) 
+		{	
+			this.day = day;		
+		}
+	
+	public void setYear(int year) 
+		{
+			this.year = year;			
+		}
+	
+	
+	public void displayDate() {
+		System.out.println(getMonth()+"/"+getDay()+"/"+getYear());
+	
+			
+	
+	private int singerId;
+	private String name;
+	private String address;
+	private Date dob;
+	private int numberOfAlbums;
+		
+	public Singer() {
+		
+	}
+	
+	public int getSingerId() {
+		return singerId;
+	}
+	
+	public String getName() {		
+		return name;
+	}	
+	
+	public String getAddress() {		
+		return address;
+	}	
+	public Date getDob() {
+		return dob;
+	}	
+	
+	public int getNumberOfAlbums() {
+		return numberOfAlbums;
+	}	
+	
+	public void setSingerId(int singerId) {
+		this.singerId = singerId;
+	}
+	
+	public void setName(String name) {			
+		this.name = name;							
+	}	
+	
+	public void setAddress(String address) {		
+		this.address = address;								
+	}	
+	
+	public void setDob(Date dob) {		
+		this.dob = dob;								
+	}	
+	
+
+	public void setNumberOfAlbums(int numberOfAlbums) {		
+		this.numberOfAlbums = numberOfAlbums;								
+	}	
+	
+	public void setSinger(int singerId, String name, String address, Date dob , int numberOfAlbums) {
+		
+		this.singerId = singerId;
+		this.name = name;
+		this.address = address;	
+		this.dob = dob;		
+		this.numberOfAlbums = numberOfAlbums;
+	}
+		
+	@Override
+	public String toString() {
+		return String.format("\nSinger ID: %d\nName: %s\nAddress: %s\nDOB: %f\nNumber Of Albums: ",
+				singerId, name, address, name, dob, numberOfAlbums);
+	}
+
+	public void setDob(int i, int j, int k) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}// end of class

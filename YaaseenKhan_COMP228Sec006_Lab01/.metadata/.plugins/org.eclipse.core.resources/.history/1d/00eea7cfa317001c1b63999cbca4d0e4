@@ -1,0 +1,56 @@
+package yaaseenkhan_COMP228Sec006;
+
+import java.sql.Date;
+
+public class Singer {
+	
+	private int singerId;
+	private String name;
+	private String address;
+	private Date dob;
+	private int numberOfAlbum;
+		
+	public Singer() {
+		
+	}
+	
+	public int getSingerId() {
+		return singerId;
+	}
+	
+	public String getName() {		
+		return name;
+	}	
+	
+	public String getAddress() {		
+		return address;
+	}	
+	public Date getDob() {
+		return dob;
+	}	
+	
+	public int getNumberOfAlbum() {
+		return numberOfAlbum;
+	}	
+	
+	public void setSingerId(int singerId) {
+		this.singerId = singerId;
+	}
+	
+	public void setName(String name) {			
+		this.name = name;							
+	}	
+	
+	public void setAddress(String address) {		
+		this.address = address;								
+	}	
+	
+	public void setDob(Date dob) {		
+		this.dob = dob;								
+	}	
+	
+
+	public void setNumberOfAlbums(int numberOfAlbums) {		
+		this.numberOfAlbums = numberOfAlbums;								
+	}	
+}// end of class

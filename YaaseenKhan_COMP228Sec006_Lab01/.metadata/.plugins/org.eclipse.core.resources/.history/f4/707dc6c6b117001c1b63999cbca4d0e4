@@ -1,0 +1,97 @@
+package yaaseenkhan_COMP228Sec006;
+
+public class Singer {
+
+	//SINGER
+	private int singerId;
+	private String name;
+	private String address;
+	private int day;
+	private int month;
+	private int year;
+	private int numberOfAlbums;
+	private String dateOfBirth;
+		
+	public Singer() {
+		
+	}
+	
+	public int getSingerId() {
+		return singerId;
+	}
+	
+	public String getName() {		
+		return name;
+	}	
+	
+	public String getAddress() {		
+		return address;
+	}	
+	public int getMonth(){
+		return month;
+	}
+	
+	public int getDay() {
+		return day;
+	}
+		
+	public int getYear() {
+		return year;
+	}
+	
+	public String getDateofBirth() {
+		return (getMonth()+"/"+getDay()+"/"+getYear());
+	}	
+	
+	public int getnumberOfAlbums() {
+		return numberOfAlbums;
+	}	
+	
+	public void setSingerId(int singerId) {
+		this.singerId = singerId;
+	}
+	
+	public void setName(String name) {			
+		this.name = name;							
+	}	
+	
+	public void setAddress(String address) {		
+		this.address = address;								
+	}	
+	
+	public void setDateofBirth(int month, int day, int year) {		
+		if (day>0 && day<=31 && month>0 && month<13 && year>1900 && year<=2021)
+		{
+			this.day = day;
+			this.month = month;
+			this.year = year;
+			
+		}								
+	}	
+	
+
+	public void setNumberOfAlbums(int numberOfAlbums) {		
+		this.numberOfAlbums = numberOfAlbums;								
+	}	
+	
+	public void setSinger(int singerId, String name, String address, String dateOfBirth , int numberOfAlbums) {
+		
+		this.singerId = singerId;
+		this.name = name;
+		this.address = address;	
+		this.dateOfBirth = dateOfBirth;		
+		this.numberOfAlbums = numberOfAlbums;
+	}
+		
+	@Override
+	public String toString() {
+		return String.format("\nSinger ID: %d\nName: %s\nAddress: %s\nDate Of Birth: %f\nNumber Of Albums: ",
+				singerId, name, address, name, dateOfBirth, numberOfAlbums);
+	}
+
+	
+
+
+	
+
+}// end of class

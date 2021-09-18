@@ -1,0 +1,10 @@
+package yaaseenkhan_COMP228Sec006;
+
+public class DateTest {
+
+	public static void main(String[] args) {
+		Date date = new Date(20,03,2020);
+		date.displayDate();
+	}
+
+}

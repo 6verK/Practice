@@ -1,0 +1,15 @@
+package yaaseenkhan_COMP228Sec006;
+
+public class SingerTest {
+
+	public static void main(String[] args) {
+		Singer singer01 = new Singer();
+		singer01.setSingerId(301164475);
+		singer01.setName("Yaaseen_Khan");
+		
+		
+		System.out.println("employee data: " + singer01.toString());
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package yaaseenkhan_COMP228Sec006;
+
+import java.sql.Date;
+
+public class Singer {
+	
+	private int singerId;
+	private String name;
+	private String address;
+	private Date dob;
+	private int numberOfAlbum;
+		
+	public Singer() {
+		
+	}
+}// end of class

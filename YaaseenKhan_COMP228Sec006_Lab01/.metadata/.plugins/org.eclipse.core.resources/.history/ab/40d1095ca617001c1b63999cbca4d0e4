@@ -1,0 +1,77 @@
+package yaaseenkhan_COMP228Sec006;
+
+import java.sql.Date;
+
+public class Singer {
+	
+	private int singerId;
+	private String name;
+	private String address;
+	private Date dob;
+	private int numberOfAlbums;
+		
+	public Singer() {
+		
+	}
+	
+	public int getSingerId() {
+		return singerId;
+	}
+	
+	public String getName() {		
+		return name;
+	}	
+	
+	public String getAddress() {		
+		return address;
+	}	
+	public Date getDob() {
+		return dob;
+	}	
+	
+	public int getNumberOfAlbums() {
+		return numberOfAlbums;
+	}	
+	
+	public void setSingerId(int singerId) {
+		this.singerId = singerId;
+	}
+	
+	public void setName(String name) {			
+		this.name = name;							
+	}	
+	
+	public void setAddress(String address) {		
+		this.address = address;								
+	}	
+	
+	public void setDob(Date dob) {		
+		this.dob = dob;								
+	}	
+	
+
+	public void setNumberOfAlbums(int numberOfAlbums) {		
+		this.numberOfAlbums = numberOfAlbums;								
+	}	
+	
+	public void setSinger(int singerId, String name, String address, Date dob , int numberOfAlbums) {
+		
+		this.singerId = singerId;
+		this.name = name;
+		this.address = address;	
+		this.dob = dob;		
+		this.numberOfAlbums = numberOfAlbums;
+	}
+		
+	@Override
+	public String toString() {
+		return String.format("\nEmployee ID: %d\nName: %s\nAddress: %s\nDOB: %f\nNumber Of Albums: ",
+				singerId, name, address, name, dob, numberOfAlbums);
+	}
+
+	public void setDob(int i, int j, int k) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}// end of class

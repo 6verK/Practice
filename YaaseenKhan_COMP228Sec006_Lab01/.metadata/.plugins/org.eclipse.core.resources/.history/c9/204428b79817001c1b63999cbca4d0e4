@@ -1,0 +1,53 @@
+package yaaseenkhan_COMP228Sec006;
+import java.util.Scanner; 
+public class Date {
+	Scanner input = new Scanner(System.in);
+	
+	private int month;
+	private int day;
+	private int year;
+
+	public Date(int day, int month, int year) {
+		day = 01;
+		month = 01;
+		year = 0000;
+	}
+	public int getMonth(){
+		return month;
+	}
+	
+	public int getDay() {
+		return day;
+	}
+		
+	public int getYear() {
+		return year;
+	}
+	
+	//setting date
+	public void setMonth(int month) {
+		
+		if(input.hasNextInt()) 
+		{
+			this.month = month;
+		}
+	}
+	
+	public void setDay(int day) {
+		
+		if(input.hasNextInt()) 
+		{
+		this.day = day;
+		}
+	}
+	
+	public void setYear(int year) {
+		
+		if(input.hasNextInt()) 
+		{
+			this.year = year;
+		}
+	}	
+	
+	
+}//class end
